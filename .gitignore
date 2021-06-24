@@ -4,4 +4,5 @@
 .Ruserdata
 *.html
 .DS_Store
-renv/
+renv/library/
+renv/local/
