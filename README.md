@@ -12,8 +12,18 @@ The rmarkdown document is taken from my own blog post:
 
 # Using `renv`
 
-1. run `renv::restore()`
+1. run `renv::restore()` in the console
 2. Knit the "fancy-covid-times.Rmd" document
+
+Making changes to the R libraries?
+
+1. A user installs, or updates, one or more packages in their local project library;
+
+2. That user calls renv::snapshot() to update the renv.lock lockfile;
+
+3. That user then shares the updated version of renv.lock with their collaborators;
+
+4. Other collaborators then call renv::restore() to install the packages specified in the newly-updated lockfile.
 
 
 # Alternative way 1: Capsule

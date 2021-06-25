@@ -51,6 +51,7 @@ We're going to look at the [daily positive test rates for Victoria](https://covi
 library(tidyverse)
 library(rvest)
 library(polite)
+library(conflicted)
 conflicted::conflict_prefer("pluck", "purrr")
 conflicted::conflict_prefer("filter", "dplyr")
 ```
